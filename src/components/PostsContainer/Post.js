@@ -14,6 +14,7 @@ const [likes, setLikes] = useState(props.post.likes);
 const incrementLike = () => {
   setLikes(likes => likes + 1)  
 }
+console.log("postpage", props)
   return (
     <div className="post-border">
       <PostHeader
@@ -29,6 +30,7 @@ const incrementLike = () => {
           src={props.post.imageUrl}
         />
       </div>
+      
       <LikeSection incrementLike={incrementLike} likes={likes}/>
       <CommentSection
         postId={props.post.imageUrl}

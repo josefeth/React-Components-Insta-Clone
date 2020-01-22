@@ -8,9 +8,9 @@ import React, { useState } from "react";
 import "./App.css";
 import PostsPage from "./components/PostsContainer/PostsPage";
 import SearchBar from "./components/SearchBar/SearchBarContainer";
-
+import logo from "./assets/heart.svg"
 import dummyData from "./dummy-data";
-import CommentSection from "./components/CommentSection/CommentSectionContainer";
+
 
 // import the PostsPage and SearchBar and add them to the App
 // import dummydata
@@ -23,7 +23,10 @@ const App = () => {
     <div className="App">
       {/* Add components here  and pass props where appropriate */}
       <SearchBar />
-      <PostsPage Post={data}/>
+      <PostsPage post={data}/>
+      <img src={logo}/>
+      
+      
       
       
     </div>

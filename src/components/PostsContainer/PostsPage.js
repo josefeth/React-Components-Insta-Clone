@@ -9,7 +9,7 @@ const PostsPage = props => {
   console.log("postPageprops", props)
   return (    
     <div className="posts-container-wrapper">
-      {props.Post.map(p =>(
+      {props.post.map(p =>(
       <Post post={p} />
       ))}
     </div>
